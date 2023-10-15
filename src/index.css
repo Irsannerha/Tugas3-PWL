@@ -1,0 +1,169 @@
+/* CSS Kustom */
+.navbar-nav {
+    margin-left: auto;
+    padding: 0;
+}
+
+.navbar-nav li {
+    margin-right: 55px;
+}
+
+/* CSS Kustom untuk gaya teks "Nama" */
+.brand-text {
+    margin-left: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.custom-navbar {
+    background-color: #fffefc;
+    color: #fff;
+
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    /* Warna teks link navigasi */
+}
+
+/* CSS Kustom untuk mengatur ukuran logo */
+.navbar-brand img {
+    width: 70px;
+    /* Ganti ukuran sesuai kebutuhan */
+    height: auto;
+    /* Biarkan tinggi otomatis untuk menjaga perbandingan aspek gambar */
+}
+
+.slider-container {
+    position: relative;
+    width: 1200px;
+    height: 630px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+  opacity: 0;
+  border: 3px solid #ff5555; /* Tambahkan border pada gambar */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tambahkan border radius pada perangkat desktop */
+@media (min-width: 468px) {
+  .slide {
+    border-radius: 10px;
+  }
+}
+
+/* Tambahkan keyframes untuk efek pada slide */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide.active {
+  animation: fadeIn 1s; /* Terapkan keyframes pada slide aktif */
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.arrow span {
+  font-size: 30px;
+}
+
+/* Dalam file Anda.css atau Anda bisa membuat file khusus seperti Contact.css */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff5555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff5555;
+}
+
+/* Dalam file CSS Anda */
+.custom-button {
+  background-color: #0062CC;
+  width: 200px;
+  /* Menetapkan lebar tetap */
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
+
+/* Dalam file Footer.css */
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.form-layout {
+  min-height: 65vh;
+}
+/* Kontak.css */
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
